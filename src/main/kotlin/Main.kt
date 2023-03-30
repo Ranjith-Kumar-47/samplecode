@@ -1,20 +1,23 @@
-import java.lang.StringBuilder
-
 fun main() {
-    val values = arrayListOf<Int>(1,2,3,4,5,6)
-//    println(values.toString())
-//    for (a in values)
-//        println(a)
-//    values.forEach { println(it) }
-    println("This is array list values $values")
+val student:Student = Student()
+//    println(student.isPassed(290))
+//    println(student.isExcellent(95))
 
-//    for ( i in 0 until values.size)
-//        println(values[i])
-    val stringValue = values.plus(values)
-    println(stringValue)
-    val builder:StringBuilder = StringBuilder("this is working and it is a arrayList ").append(values.toString())
-    println(builder)
+    val mutableList:MutableList<Int> = arrayListOf(1,2,3,4,5)
+    println(mutableList.swapTwoNumber(2, 4))
 }
-
-
-
+fun Student.isExcellent(marks:Int):Boolean{
+    return marks>90
+}
+class Student{
+    fun isPassed(marks:Int):Boolean{
+        return marks>45
+    }
+}
+fun MutableList<Int>.swapTwoNumber(index1:Int,index2:Int):MutableList<Int>
+{
+    val temp = this[index1]
+    this[index1] = this[index2]
+    this[index2] = temp
+    return this
+}
