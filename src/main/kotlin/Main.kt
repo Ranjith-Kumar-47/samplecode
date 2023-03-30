@@ -1,21 +1,19 @@
 fun main() {
-val student:Student = Student()
-//    println(student.isPassed(290))
-//    println(student.isExcellent(95))
-
-    val mutableList:MutableList<Int> = arrayListOf(1,2,3,4,5)
+    val mutableList: MutableList<Int> = arrayListOf(1, 2, 3, 4, 5)
     println(mutableList.swapTwoNumber(2, 4))
-}alsdkfjkdsfasd faskf oaisjdflaksdjf laksdjf oaisdskjf oasilsedjf 
-fun Student.isExcellent(marks:Int):Boolean{
-    return marks>90
 }
-class Student{
-    fun isPassed(marks:Int):Boolean{
-        return marks>45
+
+fun Student.isExcellent(marks: Int): Boolean {
+    return marks > 90
+}
+
+class Student {
+    fun isPassed(marks: Int): Boolean {
+        return marks > 45
     }
 }
-fun MutableList<Int>.swapTwoNumber(index1:Int,index2:Int):MutableList<Int>
-{
+
+fun MutableList<Int>.swapTwoNumber(index1: Int, index2: Int): MutableList<Int> {
     val temp = this[index1]
     this[index1] = this[index2]
     this[index2] = temp
