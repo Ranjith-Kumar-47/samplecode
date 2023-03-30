@@ -5,7 +5,8 @@ fun main() {
 
 fun Student.isExcellent(marks: Int): Boolean {
     return marks > 90
-}asdfasdf
+}
+
 
 class Student {
     fun isPassed(marks: Int): Boolean {
