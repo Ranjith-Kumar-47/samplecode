@@ -5,7 +5,7 @@ val student:Student = Student()
 
     val mutableList:MutableList<Int> = arrayListOf(1,2,3,4,5)
     println(mutableList.swapTwoNumber(2, 4))
-}
+}alsdkfjkdsfasd faskf oaisjdflaksdjf laksdjf oaisdskjf oasilsedjf 
 fun Student.isExcellent(marks:Int):Boolean{
     return marks>90
 }
